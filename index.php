@@ -12,23 +12,16 @@ function shortcode_bienvenue($atts)
 {
     extract(shortcode_atts(
         array(
-            'lol' => "Il n'y a pas de Message..."
+            'msg' => "Il n'y a pas de Message..."
         ),
         $atts
     ));
 
-    // print_r($atts);
-    // if ($atts) {
-    //     $txt = shortcode_atts([
-    //         'lol' => 'LO00000000000L',
-    //     ], $atts, $tag);
-    // }
-
-    if ($lol !== "Il n'y a pas de Message...") {
-        $txt = $lol;
+    if ($msg !== "Il n'y a pas de Message...") {
+        $txt = $msg;
     }
     else{
-        $txt = $lol;
+        $txt = $msg;
     }
     
 
